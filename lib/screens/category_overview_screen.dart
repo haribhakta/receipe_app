@@ -18,7 +18,7 @@ class CategoryOverviewScreen extends StatelessWidget {
         ),
         padding: const EdgeInsets.all(15),
         children: dummy_categories
-            .map((catData) => CategoryItem(catData.title, catData.color))
+            .map((catData) => CategoryItem(catData.id, catData.title, catData.color))
             .toList(),
       ),
     );
