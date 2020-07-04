@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:receipe_app/screens/category_meal_screen.dart';
-import 'package:receipe_app/screens/category_overview_screen.dart';
+import './screens/bottom_bar_screen.dart';
+import './screens/category_meal_screen.dart';
+//import './screens/category_overview_screen.dart';
+import './screens/meal_details_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,9 +20,10 @@ class MyApp extends StatelessWidget {
               body1: TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
               body2: TextStyle(color: Color.fromRGBO(20, 51, 1, 1)),
               title: TextStyle(fontFamily: "Roboto", fontSize: 24.0))),
-      home: CategoryOverviewScreen(),
+      home: BottomBarScreen(),
       routes: {
         CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
+        MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
       },
     );
   }
