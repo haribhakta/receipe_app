@@ -4,6 +4,7 @@ import 'category_overview_screen.dart';
 import 'favorite_screen.dart';
 
 class BottomBarScreen extends StatefulWidget {
+  static const String routeName = "/bottom_bar_screen";
   @override
   _BottomBarScreenState createState() => _BottomBarScreenState();
 }
